@@ -29,10 +29,21 @@ public class TestCircleArr {
 	}
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		/*
-		 * hey samar I know I need to put the functions in here but im too tired to 
-		 * fill the arrays with circles so imaging as if I did it 
-		 */
+		Point x1 = new Point(8,9);
+		Point y1 = new Point(6,1);
+		Point x2 = new Point(4,7);
+		Point y2 = new Point(3,6);
+		Circle c = new Circle(x1,y1);
+		c.getCenter();
+		c.getEdge();
+		c.setCenter(x2);
+		c.setEdge(y2);
+		c.toString();
+		c.getParameter();
+		c.getArea();
+		Circle other = new Circle(x1,x2);
+		c.isCircleEquals(other);
+		other.returnBiggerArea(c);
 		input.close();
 	}
 
