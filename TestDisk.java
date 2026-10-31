@@ -1,9 +1,18 @@
 
 public class TestDisk {
 	//finds the max length over 5 minutes
-	public static void maxLengthOver5(Disk songs[]) {
-		for (int i = 0; i < songs.length; i++) {
-			
+	public static void maxLengthOver5(Disk disks[]) {
+		for (int i = 0; i < disks.length; i++) {
+			double max = 0;
+			Song[] songs = disks[i].getSongs();
+			for (int j = 0; j < songs.length; j++) {
+			if (songs[j] != null && songs[j].getLength() > max) {
+				max = songs[i].getLength();
+			}
+			if(max > 5) {
+				System.out.println(disks[i].getName());
+			}
+			}
 		}
 	}
 	//using all the functions I made
