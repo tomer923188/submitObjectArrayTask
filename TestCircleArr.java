@@ -19,6 +19,7 @@ public class TestCircleArr {
 		Point center = new Point(x1,y1);
 		Point edge = new Point(x2,y2);
 		Circle result = new Circle(center, edge);
+		System.out.println(result);
 	}
 	/* gets an array and returns the circle with the biggest area 
 	 * hey samar :)
