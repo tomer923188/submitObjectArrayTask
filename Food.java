@@ -5,7 +5,7 @@ public class Food {
 	private String[] ings; //ings short for ingredients
 	private int noOfIngs; //ings short for ingredients
 	//constructor
-	public Food(int code,String name, String ings) {
+	public Food(int code,String name) {
 		this.code = code;
 		this.name = name;
 		this.ings = new String[15];
@@ -15,6 +15,7 @@ public class Food {
 	public Food(Food other) {
 		this.code = other.code;
 		this.name = other.name;
+		this.noOfIngs = other.noOfIngs;
 		this.ings = new String[15];
 		//copies all the ingredients
 	    for (int i = 0; i < noOfIngs; i++) {
@@ -68,7 +69,7 @@ public class Food {
 		 */
 	}
 	//adds an ing to the meal
-	public void addIng(String ing) {
+	public void addIngs(String ing) {
 	    if (noOfIngs < 15) {
 	        ings[noOfIngs] = ing;
 	        noOfIngs++;
