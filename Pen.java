@@ -26,6 +26,7 @@ public class Pen {
 	public String getColor() {
 		return color;
 	}
+	//returns true or false on if the pen is eraseable
 	public boolean getEraseable() {
 		return eraseable;
 	}
@@ -33,6 +34,7 @@ public class Pen {
 	public String toString() {
 		return "The pen's color is: "+this.color+" The pen's price is: "+this.price+" is it eraseable: "+this.eraseable;
 	}
+	//returns the color of the more expensive pen
 	public String moreExpensivePen(Pen other) {
 		if (this.getPrice() > other.getPrice()) {
 			return this.getColor();
@@ -41,6 +43,7 @@ public class Pen {
 			return other.getColor();
 		}
 	}
+	//returns the average price of 2 pens
 	public double averagePrice(Pen other) {
 		double sum = (this.getPrice()+other.getPrice());
 		return sum/2;
