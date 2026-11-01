@@ -11,6 +11,11 @@ public class Date
         this.month = month;
         this.year = year;
     }
+    public Date(Date other) {
+    	this.day = other.day;
+    	this.month = other.month;
+    	this.year = other.year;
+    }
     //returns the year
     public int getYear()
     {
@@ -41,7 +46,15 @@ public class Date
     {
         this.day = dayToSet;
     }
-
+    //check if it's the same
+    public boolean isTheSame(Date other) {
+    	if (this.getDay() == other.getDay() && this.getMonth() == other.getMonth() && this.getYear() == other.getYear()) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
     // Returns a positive number if this date is later than other
     public int compareTo(Date other)
     {
