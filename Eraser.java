@@ -28,7 +28,7 @@ public class Eraser {
 		return color;
 	}
 	//sets the color
-	public void setColor() {
+	public void setColor(String color) {
 		this.color = color;
 	}
 	//returns the shape
@@ -36,7 +36,7 @@ public class Eraser {
 		return shape;
 	}
 	//sets the shape
-	public void setShape() {
+	public void setShape(String shape) {
 		this.shape = shape;
 	}
 	//prints out the information
